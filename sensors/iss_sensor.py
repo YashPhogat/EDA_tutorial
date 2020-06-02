@@ -35,7 +35,11 @@ class ISS_Sensor(PollingSensor):
         location = reverse_geocode.search([coordinate])[0]
         iss_country = location['country']
 
-        self.sensor_service.dispatch(
+        previous_country = self.sensor_service.get_value(name = 'last_iss_loc', local = False)
+	if previous_country == iss_country:
+		return
+	self.sensor_service.set_value(name = 'last_iss_loc', value = iss_country, local= False)
+	self.sensor_service.dispatch(
             trigger = "eda_tutorial.ISS_Detail",
             payload = {
                 "country": iss_country
