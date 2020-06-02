@@ -1,4 +1,4 @@
-from st2common.runners.base_action import Actions
+from st2common.runners.base_action import Action
 import requests
 
 class message_out(Action):
