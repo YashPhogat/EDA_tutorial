@@ -1,0 +1,5 @@
+---
+foo:
+  type: string
+  description: A configuration parameter for demonstration.
+  required: true

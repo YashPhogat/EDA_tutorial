@@ -1,0 +1,12 @@
+---
+name: slack_message
+description: Send message to slack about the current ISS location
+runner_type: python-script
+enabled: true
+entry_point: slack_out.py
+parameters: 
+ message:
+  type: string
+  required: true
+  description: slack message body
+  
