@@ -4,7 +4,7 @@ import json
 
 from st2reactor.sensor.base import PollingSensor
 
-class ISS_Sendor(PollingSensor):
+class ISS_Sensor(PollingSensor):
 
     def setup(self) :
         # Setup stuff goes here. For example, you might establish connections
