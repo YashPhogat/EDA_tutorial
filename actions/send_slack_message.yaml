@@ -5,7 +5,8 @@ runner_type: python-script
 enabled: true
 entry_point: slack_out.py
 parameters: 
-	message:
-		type: string
-		required: true
-		description: slack message body  
+ message:
+  type: string
+  required: true
+  description: slack message body
+  
