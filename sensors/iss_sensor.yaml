@@ -1,0 +1,17 @@
+---
+class_name: "ISS_Sensor"
+entry_point: "iss_sensor.py"
+description: "Sample sensor that emits ISS location payload triggers."
+trigger_types:
+    -
+      name: "ISS_Detail"
+      description: "An ISS details trigger."
+      payload_schema:
+        type: "object"
+        properties:
+          lat:
+            type: "number"
+          long:
+            type: "number"
+          country:
+            type: "string"
