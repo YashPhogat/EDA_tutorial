@@ -1,6 +1,7 @@
 ---
 class_name: "ISS_Sensor"
 entry_point: "iss_sensor.py"
+poll_interval: 60
 enabled: False
 description: "Sample sensor that emits ISS location payload triggers."
 trigger_types:
