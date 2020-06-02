@@ -5,4 +5,4 @@ version: 0.0.1
 author: yashphogat
 email: yphogat@adobe.com
 dependencies: 
-	- requests==2.22.0
+- requests==2.22.0
