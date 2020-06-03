@@ -3,7 +3,7 @@ name: iss_rules
 description: Rule to fire slack message on ISS country change
 enabled: True
 trigger: 
- type: eda_tutorial.ISS_Details
+ type: eda_tutorial.ISS_Detail
 action:
  ref: eda_tutorial.slack_message
  parameters:
