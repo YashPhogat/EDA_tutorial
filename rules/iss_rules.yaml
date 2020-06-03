@@ -1,0 +1,10 @@
+---
+name: iss_rules
+description: Rule to fire slack message on ISS country change
+enabled: True
+trigger: 
+ type: eda_tutorial.ISS_Details
+action:
+ ref: eda_tutorial.slack_message
+ parameters:
+  message: "The ISS is now in a new country. \n Welcome to {{trigger.country}} ISS."
