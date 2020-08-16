@@ -1,5 +1,2 @@
 requests==2.22.0
-<<<<<<< HEAD
 reverse-geocode==1.4
-=======
->>>>>>> d28b61f0e65e9f09d3c73bdf35836b86add1fabe
